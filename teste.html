@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fb7f230f58.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>jusbyt</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./logo.png" alt="Logo JLNF">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/jusby8514">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:jlnfilho@outlook.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/27988008716">whatsapp</a>
+            </li>
+        </ul>
+    </header>   
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>José Luiz Nunes Filho</h1>
+                <h5>Futuro Full-stack developer</h5>
+            </div>
+
+            <div id="lamp">
+                <i id="animation" class="fa-solid fa-lightbulb"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                <p>
+                    Olá, me chamo José Luiz Nunes Filho, tenho 29 anos, faço faculdade de Sistema da informação e atualmente estou estudando para me tornar um desenvolvedor full-stack. Tenho conhecimento nas linguagens de programação: C, PHP e ruby. E tenho habilidade avançada com o Photoshop e CorelDRAW.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email!">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        $(document).ready(function(){
+          $("i").click(function(){
+            $("#about").toggle();            
+          });
+        });
+    </script>
+
+    <script>
+        $("#lamp").click(function(e){    $(e.currentTarget).toggleClass("paused");  });        
+    </script>
+
+    <!-- <script>
+        function displayAbout() {
+            document.getElementById('animation').style.animationIterationCount=0; 
+            console.log();                  
+        }
+    </script> -->
+
+</body>
+</html>
